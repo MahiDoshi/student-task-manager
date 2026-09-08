@@ -31,6 +31,7 @@ npm run lint
 5. Perform Code Review.
 6. Merge after required checks pass.
 7. Create a Release.
+   DONE
 
 ## GitHub features demonstrated
 Repository, branches, commits, PRs, code review, Issues, Labels, Milestones, Projects, Discussions, README, Wiki, Pages, Markdown, CONTRIBUTING, CHANGELOG, Actions, workflows, jobs, runners, artifacts, caching, CodeQL, Dependabot, secret scanning, Copilot, Codespaces, environments, testing, releases, open-source community files, APIs, administration, CLI/Desktop/VS Code workflows.
