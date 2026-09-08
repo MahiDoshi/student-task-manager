@@ -17,16 +17,11 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
+          cache: npm
 
       - name: Run tests
         run: npm test
 
       - name: Syntax check
         run: npm run lint
-
-      - name: Upload test files
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-files
-          path: tests/
