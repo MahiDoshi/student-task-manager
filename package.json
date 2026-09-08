@@ -6,5 +6,6 @@
   "scripts": {
     "test": "node --test",
     "lint": "node --check script.js"
+    "build": "node --check script.js"
   }
 }
