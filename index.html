@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Student Task Manager</h1>
+      <p>Simple task tracking demo for a GitHub-enabled college project.</p>
+    </header>
+
+    <section class="card">
+      <form id="taskForm">
+        <input id="taskInput" type="text" placeholder="Enter a task..." maxlength="100" required>
+        <select id="priorityInput" aria-label="Priority">
+          <option value="Low">Low</option>
+          <option value="Medium" selected>Medium</option>
+          <option value="High">High</option>
+        </select>
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+
+    <section class="stats">
+      <div><strong id="total">0</strong><span>Total</span></div>
+      <div><strong id="completed">0</strong><span>Completed</span></div>
+      <div><strong id="pending">0</strong><span>Pending</span></div>
+    </section>
+
+    <section class="card">
+      <div class="toolbar">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="pending">Pending</button>
+        <button class="filter" data-filter="completed">Completed</button>
+      </div>
+      <ul id="taskList"></ul>
+      <p id="empty" class="empty">No tasks yet.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
