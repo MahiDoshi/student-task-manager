@@ -7,6 +7,7 @@ function addTask(tasks, title, priority = "Medium") {
 
 test("adds a task with default completion state", () => {
   const tasks = addTask([], "Study GitHub");
+
   assert.equal(tasks.length, 1);
   assert.equal(tasks[0].title, "Study GitHub");
   assert.equal(tasks[0].completed, false);
@@ -14,6 +15,7 @@ test("adds a task with default completion state", () => {
 
 test("stores selected priority", () => {
   const tasks = addTask([], "Submit assignment", "High");
+
   assert.equal(tasks[0].priority, "High");
 });
 
@@ -24,4 +26,9 @@ test("completed count is calculated correctly", () => {
     { title: "C", completed: true }
   ];
   assert.equal(tasks.filter(t => t.completed).length, 2);
+
+  assert.equal(
+    tasks.filter(task => task.completed).length,
+    2
+  );
 });

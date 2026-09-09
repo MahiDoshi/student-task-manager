@@ -75,3 +75,4 @@ document.querySelectorAll(".filter").forEach(button => {
 });
 
 render();
+console.log("Student Task Manager");

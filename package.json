@@ -6,5 +6,10 @@
   "scripts": {
     "test": "node --test",
     "lint": "node --check script.js"
+  "description": "A simple student task manager",
+  "scripts": {
+    "test": "node --test",
+    "lint": "node --check script.js",
+    "build": "node --check script.js"
   }
 }
